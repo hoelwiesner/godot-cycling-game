@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/card-back2.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Card/PlayedCards.gd" type="Script" id=2]
+
+[node name="PlayedCards" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="SprinterDeckPosition" type="Position2D" parent="."]
+position = Vector2( 41, 148 )
+
+[node name="Sprite" type="Sprite" parent="SprinterDeckPosition"]
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
